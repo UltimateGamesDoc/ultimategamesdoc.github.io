@@ -1,0 +1,105 @@
+body {
+    background-image: url("../images/background2.gif");
+    background-size: 80px, 80px;
+    background-color: black;
+    text-align: center;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    padding: 5px;
+}
+
+.normalText {
+    color: #ecedf3;
+    font-size: 45px;
+}
+.headerText {
+    color: #ecedf3;
+    font-size: 65px;
+}
+
+.linkButton {
+    color: #ecedf3;
+    text-underline-offset: 8px;
+    font-size: 40px;
+    background-color: #1e1f20a9;
+    padding: 10px;
+    border: #000500 outset 3px;
+    border-radius: 15px;
+    transition: 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.375);
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+.linkButton:hover {
+    color: #4797ff;
+    font-size: 48px;
+    border: #0fe40f outset 4px;
+    padding: 15px;
+    background-color: #0c610c66;
+}
+.buttonIcon {
+    width: 200px;
+    height: 120px;
+    object-fit: contain;
+    vertical-align: middle;
+    background-color: #08490833;
+    border-radius: 15px;
+    padding: 10px;
+    border: #000500 outset 3px;
+    transition: 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.375);
+}
+.linkButton:hover .buttonIcon {
+    width: 220px;
+    height: 140px;
+    border: #0fe40f outset 4px;
+    background-color: #0f760f88;
+}
+.linkButton:active {
+    color: #4797ff;
+    font-size: 33px;
+    border: #09ff09 outset 3px;
+    padding: 5px;
+    background-color: #0f760f8e;
+}
+.linkButton:active .buttonIcon {
+    width: 160px;
+    height: 80px;
+    border: #08ff08 outset 3px;
+    background-color: #1a9a1aca;
+}
+
+.title {
+    color: #ecedf3;
+    font-size: 75px;
+    border-radius: 35px;
+    border: outset 5px #1e1f20;
+    background-color: #343638;
+    padding: 5px;
+}
+
+.gameButton {
+    font-size: xx-large;
+    padding: 10px;
+    border-radius: 15px;
+    border: #800c80e2 solid 3px;
+    background-color: #6b076bdf;
+    color: #ecedf3;
+    transition: 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.gameButton:hover {
+    border: #cd23cde2 solid 3px;
+    background-color: #a513a5df;
+}
+.gameButton:active {
+    border: #500a50d2 solid 3px;
+    background-color: #340334be;
+}
+
+.gameWindow {
+    width: 990px;
+    height: 555px;
+    overflow: hidden;
+    border-radius: 35px;
+}
+.gameWindow:fullscreen {
+    border-radius: 0px;
+}
