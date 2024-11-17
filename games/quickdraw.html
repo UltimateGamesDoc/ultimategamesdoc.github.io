@@ -1,8 +1,16 @@
 <!DOCTYPE html>
 
+<system.webServer>
+    <httpProtocol>
+        <customHeaders>
+            <add name="X-Frame-Options" value="ALLOW" />
+        </customHeaders>
+    </httpProtocol>
+</system.webServer>
+
 <html lang="en">
     <head>
-        <title>UGNSD!!! | Quick Draw</title>
+        <title>UGNSD!!! | Quick, Draw!</title>
 
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -15,7 +23,7 @@
     <body>
         <script src="../js/main.js"></script>
 
-        <h1 class="title">Quick Draw</h1>
+        <h1 class="title">Quick, Draw!</h1>
 
         <div style="padding-bottom: 25px;"></div>
 
@@ -28,7 +36,7 @@
 
         <div style="padding: 60px;"></div>
 
-        <a class="normalText">Quick Draw is a game where you draw and the bot tries to guess what you drew.</a><br>
+        <a class="normalText">Quick, Draw! is a game where you draw and a bot tries to guess what you drew.</a><br>
 
         <div style="padding: 40px;"></div>
     </body>
